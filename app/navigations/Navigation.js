@@ -2,13 +2,13 @@ import React from 'react'
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 //-----------------------------------------------
-//importando los Screents
+//importando los Stack
 
-import Restaurants from '../screens/Restaurants'
-import Favorites from '../screens/Favorites'
-import Search from '../screens/Search'
-import TopRestaurants from '../screens/TopRestaurants'
-import Account from '../screens/Account'
+import RestaurantStack from './RestaurantStack';
+import FavoriteStack from './FavoriteStack';
+import SearchStack from './SearchStack';
+import TopRestaurantStack from './TopRestaurantStack'
+import AccountStack from './AccountStack'
 
 //createBottonTabNavigator es una funcion tenemos que convertirla a un componente
 
@@ -24,31 +24,31 @@ export default function Navigation(){
             <Tab.Navigator>
                 <Tab.Screen
                 name='restaurants'
-                component={Restaurants}
+                component={RestaurantStack}
                 options={{title:"Restaurantes"}}
                  />
 
                  <Tab.Screen 
                  name='favorites'
-                 component={Favorites}
+                 component={FavoriteStack}
                  options={{title:"Favoritos"}}
                  />
 
                  <Tab.Screen
                  name='search'
-                 component={Search}
+                 component={SearchStack}
                  options={{title:"Buscar"}}
                   />
 
                 <Tab.Screen
                 name='top-restaurants'
-                component={TopRestaurants}
+                component={TopRestaurantStack}
                 options={{title:"Top-5"}}
                  />
 
                 <Tab.Screen
                 name='accounts'
-                component={Account}
+                component={AccountStack}
                 options={{title:"Cuenta"}}
                 />
 
