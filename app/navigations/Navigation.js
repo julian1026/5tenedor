@@ -72,6 +72,7 @@ export default function Navigation(){
     
 }
 
+//funcion donde cargo icon dependiendo del  tabBoton
 function screenOptions(route,color){
     let iconName;
     switch (route.name) {
@@ -88,7 +89,7 @@ function screenOptions(route,color){
             break;
 
         case 'accounts':
-            iconName='account-outline'
+            iconName='home-outline'
             break;
 
         case 'top-restaurants':

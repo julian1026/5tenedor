@@ -45,10 +45,18 @@ intalando componentes de navegacion
 yarn add react-native-elements@1.2.7
 
 ------------------------------------
+/////////////////////////////////////////////////////////////////
+--------------------
+instalar firebase 
+-------------------
+yarn add firebase@~7.14.0
 
+tocar estar pendiente al mensaje para corregir version de firebase cuando iniciamos app
+--en este caso correguimos con la version solicitada
 
+yarn add firebase@~7.9.0
 
-
+------------------------------------------------
 
 
 
