@@ -25,8 +25,8 @@ export default function Navigation(){
             <Tab.Navigator
             initialRouteName='restaurants' // app inicie en el boton restaurants
             tabBarOptions={{   // se controla los colores del tabBar
-                inactiveTintColor:'#646464',
-                activeTintColor:'#00a680',
+                inactiveTintColor:'#070707',//color general tabOptin
+                activeTintColor:'#34CD0E',//color especifico
             }}
 
             // en esta parte cargo la funcion que me permitira cargar iconos
